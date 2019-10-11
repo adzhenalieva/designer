@@ -1,5 +1,5 @@
 import axios from '../axios';
-import {NotificationManager} from 'react-notifications';
+
 
 export const LISTING_REQUEST = 'LISTING_REQUEST';
 export const LISTING_SUCCESS = 'LISTING_SUCCESS';
@@ -13,7 +13,7 @@ export const listingFailure = error => ({type: LISTING_FAILURE, error});
 export const fetchListings = number => {
     return async dispatch => {
         if (parseInt(number) <= 0 || parseInt(number) > 10) {
-            NotificationManager.warning("Enter number from 1 to 10");
+
         } else {
             dispatch(listingRequest());
             try {

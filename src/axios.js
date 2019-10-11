@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'https://dev.yurtah.com/api/v1'
+    baseURL: 'https://portfolio-5cc8a.firebaseio.com/'
 });
 
 export default instance;
