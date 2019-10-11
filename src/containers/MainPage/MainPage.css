@@ -1,0 +1,49 @@
+.SubmitButton {
+    background: #2F80ED;
+    border-radius: 16px;
+    border: none;
+    width: 167px;
+    height: 50px;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    margin: 10px auto;
+}
+
+.Input {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #CDCDCD;
+    background: #FFFFFF;
+    border-radius: 16px;
+    width: 284px;
+    height: 50px;
+    border: none;
+    padding: 0 0 0 50px;
+    display: block;
+    margin: 10px auto;
+}
+
+.Camps{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 680px) {
+    .SubmitButton {
+        border-radius: 0 16px 16px 0;
+        display: inline;
+        margin: 0;
+    }
+    .Input{
+        border-radius: 16px 0 0 16px;
+        display: inline;
+        margin: 0;
+    }
+}
+
