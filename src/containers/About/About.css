@@ -1,19 +1,40 @@
-.About{
-    margin: 0 auto;
-    width: 65%;
+.AboutImage {
+    width: 90%;
+    height: auto;
 }
-.AboutTitle{
+
+.About {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.AboutTitle {
     font-weight: 800;
+    background: linear-gradient(90deg,#833ab4 0%,#fd1d1d 50%,#fcb045 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
     font-size: 50px;
     line-height: 59px;
     text-align: center;
-    color: #1457B0;
-    text-shadow: #ffffff 2px 2px 0, #ffffff -2px -2px 0, #ffffff -2px 2px 0, #ffffff 2px -2px 0;
 }
-.AboutText{
+
+.AboutText {
     font-weight: 500;
     font-size: 19px;
-    line-height: 22px;
     text-align: center;
     color: #333333;
+}
+
+@media screen and (min-width: 680px) {
+    .AboutImage {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .AboutImage {
+        width: 50%;
+    }
 }

@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import MainBlock from "../../components/MainBlock/MainBlock";
+import Avatar from "../../assets/images/avatar.jpg"
 
 import './About.css';
 
@@ -7,11 +7,14 @@ class MainPage extends Component {
     render() {
         return (
             <Fragment>
-                <MainBlock/>
                 <div className="About">
-                    <h2 className="AboutTitle">About</h2>
-                    <p className="AboutText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+                    <h2 className="AboutTitle">Beautiful food pictures</h2>
+                    <img className="AboutImage" src={Avatar} alt="avatar"/>
+                    <p className="AboutText">Image by <a className="ExternalLink"
+                        href="https://pixabay.com/ru/users/lukasbieri-4664461/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2378758">Lukas
+                        Bieri</a> from <a className="ExternalLink"
+                        href="https://pixabay.com/ru/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2378758">Pixabay</a>.
+                    </p>
                 </div>
             </Fragment>
         );
