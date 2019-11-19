@@ -8,13 +8,16 @@ class Nav extends Component {
 
     render() {
         return (
-            <nav className="MainNav">
-                <div className="Container">
-                    <p className="Logo"/>
-                    <NavLink className="NavLink" activeClassName="Active" exact={true} to="/">Home</NavLink>
-                    <NavLink className="NavLink" activeClassName="Active" exact={true} to="/about">About</NavLink>
+            <header className="Header">
+                <div className="Container clearfix">
+                    <NavLink className="Logo" exact={true} to="/">@FoodPic</NavLink>
+                    <nav className="MainNav">
+                        <NavLink className="NavLink" activeClassName="Active" exact={true} to="/">Home</NavLink>
+                        <NavLink className="NavLink" activeClassName="Active" exact={true} to="/about">About</NavLink>
+
+                    </nav>
                 </div>
-            </nav>
+            </header>
         );
     }
 }

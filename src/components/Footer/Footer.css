@@ -1,0 +1,15 @@
+.Footer{
+    background: #cdcdcd;
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0;
+}
+.ExternalLink{
+    text-decoration: none;
+    color: #333333;
+}
+.ExternalLink:hover{
+    color: blue;
+    text-decoration: underline;
+}
